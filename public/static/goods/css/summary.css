@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol li{
+    list-style: none;
+}
+.summary_nav .container{
+    width: 90%;
+    margin: 0 auto;
+    height: 60px;
+}
+.summary_nav .container h1{
+    width: 100px;
+    font-size: 20px;
+    font-weight: normal;
+    float: left;
+    margin-right: 700px;
+}
+.summary_nav .container ul li{
+    float: left;
+}
+.summary_nav .container ul li a{
+    padding: 0 10px;
+    display: inline-block;
+    color: #616161;
+    font-size: 16px;
+}
+.summary_nav .container .right input{
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    background: #ff6700;
+    cursor: pointer;
+    border: 1px solid #ff6706;
+}
+.summary_nav .container .right input:hover{
+    background: #ff3710;
+}
+.summary_nav .container ul li a:hover{
+    color: #ff6700;
+}
+.summary_nav .container ul li span{
+    color: #616161;
+}
+.summary_page01 img{
+    width: 100%;
+    position: relative;
+}
+.summary_page01 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 722px;
+}
+.summary_page01_red{
+    position: absolute;
+    cursor: pointer;
+    text-align:left;
+    top: 50%;
+    left: 20%;
+    margin-top: -90px;
+    margin-left: -151px;
+    color: white;
+}
+.summary_page01_red h1{
+    font-weight:normal;
+    font-size: 60px;
+}
+.summary_page01_red p{
+    margin-bottom: 20px;
+}
+.summary_page01_red h4{
+    display: inline-block;
+    margin-right: 100px;
+}
+.summary_page01_red span{
+    text-decoration: line-through;
+}
+
+.summary_page01 .summary_page01_btn_up{
+    background: url("../images/pager.png");
+    position: absolute;
+    width: 51px;
+    height: 100px;
+    margin-top: -50px;
+    z-index: 999;
+    top: 50%;
+    cursor: pointer;
+}
+.summary_page01 .summary_page01_btn_next{
+    background: url("../images/pager.png");
+    background-position: -76px;
+    position: absolute;
+    right: 0px;
+    width: 51px;
+    height: 100px;
+    margin-top: -50px;
+    z-index: 999;
+    top: 50%;
+    cursor: pointer;
+}
+.summary_page01 ol{
+    list-style: none;
+    z-index: 999;
+    position: absolute;
+    left: 50%;
+    margin-left: -180px;
+    bottom: 3%;
+}
+.summary_page01 ol li{
+    float: left;
+    width: 80px;
+    height: 3px;
+    background: #ffffff;
+    margin-left: 10px;
+    cursor: pointer ;
+}
+.summary_page01 ol li:hover{
+    background: #9a9a9a;
+}
+.page01_btn_now33{
+    background: #9a9a9a;
+}
+.summary_page02{
+    position: relative;
+}
+.summary_page02 img{
+    width: 100%;
+}
+.summary_page02_content{
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-top: -90px;
+    margin-left: -151px;
+    color: white;
+}
+.summary_page03{
+    position: relative;
+}
+.summary_page03 img{
+    width: 100%;
+}
+.summary_page03_content h1{
+    font-weight: normal;
+    line-height: 50px;
+}
+.summary_page03_content{
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+    top: 10%;
+    left: 50%;
+    margin-left: -151px;
+    color: #959595;
+}
+.summary_page04{
+    position: relative;
+}
+.summary_page04 img{
+    width: 100%;
+}
+.summary_page04_content h1{
+    font-weight: normal;
+    line-height: 50px;
+}
+.summary_page04_content{
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+    top: 10%;
+    left: 50%;
+    margin-left: -151px;
+    color: #959595;
+}
+.summary_page05 .summary_carousel{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 372px;
+    padding: 10px 0 40px;
+}
+.summary_page05 .summary_carousel ul{
+    position: relative;
+    width: 6000px;
+}
+.summary_page05 .summary_carousel ul li{
+    float: left;
+    margin-left: 20px;
+}
+.summary_page05 .summary_carousel ul li img{
+    width: 650px;
+}
+
+.summary_page05 .summary_page05_btn_up{
+    background: url("../images/pager.png");
+    position: absolute;
+    width: 51px;
+    height: 100px;
+    margin-top: -50px;
+    z-index: 999;
+    top: 50%;
+    cursor: pointer;
+}
+.summary_page05 .summary_page05_btn_next{
+    background: url("../images/pager.png");
+    background-position: -76px;
+    position: absolute;
+    right: 0px;
+    width: 51px;
+    height: 100px;
+    margin-top: -50px;
+    z-index: 999;
+    top: 50%;
+    cursor: pointer;
+}
+.summary_page05 ol{
+    list-style: none;
+    z-index: 999;
+    position: absolute;
+    left: 50%;
+    margin-left: -240px;
+    bottom: 3%;
+}
+.summary_page05 ol li{
+    float: left;
+    width: 80px;
+    height: 5px;
+    background: #cccccc;
+    margin-left: 10px;
+}
+.banner_btn_now55{
+    background: white;
+}
+
+.summary_page06{
+    position: relative;
+}
+.summary_page06 img{
+    width: 100%;
+}
+.summary_page06_content h1{
+    font-weight: normal;
+    line-height: 50px;
+}
+.summary_page06_content{
+    position: absolute;
+    cursor: pointer;
+    text-align: left;
+    top: 39%;
+    left: 71%;
+    margin-left: -151px;
+    color: white;
+}
+
+.summary_page07{
+    position: relative;
+}
+.summary_page07 img{
+    width: 100%;
+}
+.summary_page07_content h1{
+    font-weight: normal;
+    line-height: 50px;
+}
+.summary_page07_content{
+    position: absolute;
+    cursor: pointer;
+    text-align: left;
+    top: 39%;
+    left: 15%;
+    margin-left: -151px;
+    color: #2b2b2b;
+}
+.summary_page08 .container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.summary_page08 .container ul{
+    overflow: hidden;
+}
+.summary_page08 .container ul li img{
+    width: 100%;
+}
+.summary_page08 .container ul li p{
+    font-size: 12px;
+}
+.summary_page08 .container ul li h1{
+    font-weight: normal;
+    font-size: 16px;
+    color: black;
+}
+.summary_page08 .container ul li{
+    float: left;
+    width: 500px;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.summary_page08_content{
+    position: absolute;
+    text-align: center;
+    color: #2b2b2b;
+    top: 20px;
+    left: 25%;
+}
+
+.summary_page09{
+    position: relative;
+}
+.summary_page09 img{
+    width: 100%;
+}
+.summary_page09_content h1{
+    font-weight: normal;
+    line-height: 50px;
+}
+.summary_page09_content{
+    position: absolute;
+    cursor: pointer;
+    text-align: left;
+    top: 39%;
+    left: 20%;
+    margin-left: -151px;
+    color: white;
+}
+.summary_page10{
+    background: #fbe9e7;
+    position: relative;
+}
+.summary_page10_img img{
+    margin: 100px 0;
+    width: 100%;
+}
+.summary_page10 ol{
+    position: absolute;
+    overflow: hidden;
+    margin-left: -136px;
+    left: 50%;
+    bottom: 42%;
+
+}
+ol li.summary_page10_cur{
+    background: #cccccc;
+}
+.summary_page10 ol li{
+    float: left;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    margin: 0 20px;
+    border-radius:50% ;
+}
+.summary_page10 ol li:nth-child(1){
+    background: #fbb3b7;
+    border: 2px solid #fbb3b7;
+}
+.summary_page10 ol li:nth-child(2){
+    background: #efd8bf;
+    border: 2px solid #efd8bf;
+}
+.summary_page10 ol li:nth-child(3){
+    background: #000;
+    border: 2px solid #000;
+}
+.summary_page10 ol li:nth-child(4){
+    background: #98181e;
+    border: 2px solid #98181e;
+}
+.summary_page10 .summary_page10_icon{
+    width: 70.80292%;
+    padding-bottom: 5.10949%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.summary_page10 .summary_page10_icon ul li{
+    float: left;
+    width: 33.2%;
+    list-style: none;
+    padding: 40px 0;
+    text-align: center;
+}
+.summary_page10 .summary_page10_icon ul li .icon{
+    width: 75px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+.summary_page10 .summary_page10_icon ul li .icon01{
+    background: url("../images/ver-icon.png") no-repeat 0 0px;
+}
+.summary_page10 .summary_page10_icon ul li .icon02{
+    background: url("../images/ver-icon.png") no-repeat 0 -80px;
+}
+.summary_page10 .summary_page10_icon ul li .icon03{
+    background: url("../images/ver-icon.png") no-repeat 0 -160px;
+}
+.summary_page10 .summary_page10_icon ul li .icon04{
+    background: url("../images/ver-icon.png") no-repeat 0 -240px;
+}
+.summary_page10 .summary_page10_icon ul li .icon05{
+    background: url("../images/ver-icon.png") no-repeat 0 -320px;
+}
+.summary_page10 .summary_page10_icon ul li .icon06{
+    background: url("../images/ver-icon.png") no-repeat 0 -400px;
+}
+.summary_page10 .summary_page10_icon ul li .name{
+    line-height: 22px;
+    height: 44px;
+    font-size: 16px;
+    color: #616161;
+    margin-top: 1.45985%;
+}
+.summary_page11{
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    line-height: 200px;
+    height: 200px;
+    color: white;
+}
+.summary_page11 h1{
+    font-weight:normal;
+}
+.summary_page11 h1 a{
+    color: white;
+    font-size: 45px;
+}

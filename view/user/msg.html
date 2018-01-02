@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>你的操作已成功！<strong id="auto_s">3</strong>秒后自动跳转！</div>
+    <script>
+        var now_time=2;
+        var end_time=0;
+        var timer=null;
+
+       setInterval(function () {
+           var auto_s=document.getElementById("auto_s");
+           auto_s.innerHTML=now_time;
+           now_time--;
+           if(now_time<end_time){
+               clearInterval(timer);
+               window.location.href="../user/login";
+           }
+       },1000)
+    </script>
+
+</body>
+</html>

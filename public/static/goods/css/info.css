@@ -1,0 +1,366 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #fff;
+}
+.fix_goods_introduction.fixed{
+    display: block;
+    position: fixed;
+    top:0px;
+    z-index: 999;
+    width:100%;
+    background: white;
+    display: none;
+}
+.goods_introduction{
+    width:100%;
+    border: 2px  solid #eeeeee;
+    height:75px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.summarize,.parameter,.size_f,.user_evaluation{
+    float: left;
+    margin-top: 30px;
+    margin-right:10px;
+    color: black;
+    text-decoration: none;
+    border-right:1px solid #999999;
+    padding-right:15px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.user_evaluation{
+    border-right:none;
+}
+.summarize:hover,.parameter:hover,.size_f:hover,.user_evaluation:hover{
+    color:#ff6700;
+}
+.goods_name{
+    float: left;
+    line-height: 80px;
+    margin-left: 150px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 800px;
+}
+.goods_title{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.goods_name_fade{
+    height:3px;
+    width:100%;
+    background: rgba(150,150,150,0.1)
+}
+.goods_details{
+    width:100%;
+    height:1300px;
+}
+.discount{
+    color:#ff6700;
+    word-spacing:8px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.goods_sketch{
+    color:#999999;
+    font-size:12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.left_goods_pic{
+    position: relative;
+    width:560px;
+    height:560px;
+}
+.left_goods_pic,.right_goods_choose_information{
+    float:left ;
+}
+.right_goods_choose_information{
+    margin-top: 50px;
+}
+.new_price,.old_price{
+    float: left;
+    margin-top: 15px;
+    color:#ff6700;
+}
+.old_price{
+    margin-top: 19px;
+    text-decoration: line-through;
+    color: #999999;
+    margin-left: 10px;
+    font-weight: normal;
+}
+.phone_pic{
+    position: absolute;
+}
+.parting_line{
+    width:100%;
+    height:1px;
+    background:rgba(150,150,150,0.3);
+    margin-top: 45px;
+}
+.gifts_list li{
+    margin-top: 8px;
+}
+.gift_button{
+    background: #ff6700;
+    color:white;
+    text-align: center;
+    width:80px;
+    float: left;
+    margin-right: 5px;
+    padding-top:2px;
+    padding-bottom: 2px;
+}
+.gifts_and_discount{
+    margin-bottom: -10px;
+}
+.location{
+    width:100%;
+    height:100px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    background:rgba(150,150,150,0.1);
+    margin-top: 20px;
+    border: 1px solid rgba(150,150,150,0.3);
+}
+.location_details{
+    margin-left: -200px;
+    line-height: 50px;
+}
+.modify{
+    color:#ff6700;
+    cursor:pointer;
+
+}
+.have_goods{
+    color:#ff6700;
+    cursor:pointer;
+}
+.select_version{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+.version{
+    width:250px;
+    height:45px;
+    border: 1px solid #eeeeee;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.version_detail,.version_price{
+    float: left;
+}
+.version_detail{
+    margin-left: 40px;
+}
+.version_price{
+    margin-left: 40px;
+    color:#888888;
+}
+.version.cur{
+    border:#ff6700 1px solid;
+}
+.version.cur .version_detail{
+    color:#ff6700;
+}
+.select_color{
+    margin-top: 30px;
+}
+.choose_color{
+    width:600px;
+}
+.choose_color li{
+    float: left;
+}
+.choose_version{
+    width:600px;
+    overflow: hidden;
+    -moz-user-select: none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.choose_version li{
+    float: left;
+    margin-right: 20px;
+}
+.color{
+    -moz-user-select: none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    width:250px;
+    height:45px;
+    border: 1px solid #eeeeee;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.color.cur{
+    border:#ff6700 1px solid;
+}
+.color.cur .color_detail{
+    color:#ff6700;
+}
+.select_insurance{
+    margin-top: 150px;
+}
+.realize_insurance{
+    margin-left: 320px;
+    cursor: pointer;
+    color:#ff6700;
+}
+/*意外保险样式*/
+.insurance{
+    width:100%;
+    height:100px;
+    font-size: 14px;
+    background:white;
+    margin-top: 20px;
+    border: 1px solid rgba(150,150,150,0.3);
+    -moz-user-select: none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    overflow: hidden;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+.insurance.cur{
+    border: 1px solid #ff6700;
+}
+.buy_or_not_buy_insurance{
+    float: left;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 13px 0 0 40px;
+    display: block;
+    border-radius:50%;
+    background: white;
+    border:1px solid #999999;
+    cursor: pointer;
+}
+.insurance_pic{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 0 30px;
+}
+.insurance>div{
+    float: left;
+}
+.insurance>div .phone_insurance{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.insurance.cur>div .phone_insurance{
+    color:#ff6700;
+}
+.mi5X_insurance{
+    font-size: 14px;
+    height: 18px;
+    color: #b0b0b0;
+}
+.insurance_price{
+    float: right;
+    color:#666666;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.collocation_purchase{
+    margin-top: 30px;
+}
+.collocation_buy{
+    width:100%;
+    height:100px;
+    text-align: center;
+    font-weight: normal;
+    background:white;
+    margin-top: 20px;
+    border: 1px solid rgba(150,150,150,0.3);
+    line-height:100px;
+    font-size: 20px;
+}
+.collocation_buy_button,.collocation_buy_together{
+    float: left;
+}
+.collocation_buy_together{
+    margin-left: 200px;
+}
+.collocation_buy_button{
+    margin-left: 260px;
+    transform:rotate(90deg);
+    cursor: pointer;
+}
+.final_text{
+    width:100%;
+    height:100px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    background:rgba(150,150,150,0.1);
+    margin-top: 30px;
+
+}
+.final_price_and_detail{
+    color:#666666;
+    line-height: 65px;
+
+}
+.goods_total{
+    text-align: center;
+    margin-top: -5px;
+    font-size: 20px;
+    color: #ff6700;
+}
+/*加入购物车的样式*/
+.cart_btn{
+    overflow: hidden;
+}
+.cart_btn>input{
+    width:300px;
+    height:54px;
+    background: #ff6700;
+    border: inherit;
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    cursor: pointer;
+    float: left;
+    margin-right: 25px;
+}
+.cart_btn>input:hover{
+    background: #ff984c;
+}
+.seven_day{
+    margin-top: 20px;
+    color:#999999
+}
+.xiaomi_box{
+    width:100%;
+    height:1450px;
+    background: #f5f5f5;
+}
+.packing_list,.xiaomi_promise,.official_weChat{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.packing_list{
+    line-height: 100px;
+    margin-bottom: 0;
+}
+.container{
+    position: relative;
+}

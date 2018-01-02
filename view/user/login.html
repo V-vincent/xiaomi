@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米账户-登录</title>
+    <link rel="stylesheet" href="{$config.site_url}/public/static/user/css/login.css?4">
+    <script src="{$config.site_url}/public/static/user/js/jquery3.2.1.js"></script>
+</head>
+<body>
+<div class="login_logo">
+    <a><img src="{$config.site_url}/public/static/user/images/login_logo.png" alt=""></a>
+</div>
+<div class="login_content">
+    <div class="login_main">
+    <div class="login_main_top">
+        <a  class="hover">账号登录</a>
+        <span></span>
+        <a >扫码登录</a>
+    </div>
+    <div class="login_main_content">
+      <!-- 登录 -->
+        <div class="login_main_account login_common">
+        	<form method="POST">
+            	<input type="text" placeholder="邮箱/手机号码/小米ID" id="login_username">
+            	<input type="text" placeholder="密码" id="login_pwd" type="password">
+            	<input type="button" value="登录" class="btn" id="login_btn" >
+            	<a  class="a_btn" >手机短信登录/注册</a>
+            	<div class="a_left"><a href="../user/reg">立即注册</a><span>|</span><a href="../user/revise">忘记密码？</a></div>
+            	<div class="login_main_bottom">
+                	<span></span><span></span><p>其他登录方式</p>
+                	<ul>
+                    	<li><i class="btn_sns icon_qq"></i></li>
+                    	<li><i class="btn_sns icon_weibo"></i></li>
+                    	<li><i class="btn_sns icon_zfb"></i></li>
+                    	<li><i class="btn_sns icon_wx"></i></li>
+                	</ul>
+            	</div>
+            </form>
+        </div>
+        <div class="login_main_scan">
+            <img src="{$config.site_url}/public/static/user/images/ewm.png" alt="">
+            <p>使用<span>小米商城APP</span>扫一扫</p>
+            <p>小米手机可打开「设置」>「小米帐号」扫码登录</p>
+        </div>
+       <!-- &lt;!&ndash; 注册 &ndash;&gt;
+        <div class="login_main_scan login_common">
+        	<form action="index.php?controler=user&action=doReg" method="POST">
+        	    <input name="user" placeholder="邮箱/手机号码/小米ID" type="text" style="margin-top: 40px;">
+           		<input name="password" placeholder="密码" type="password">
+              <label class="reg_verify" >
+                    <input name="verify_code" id="verify_code" placeholder="请输入验证码" type="text" >
+                    <img id="verify_pic" src="../library/verify.php" alt="">
+                    <a onclick="changing();">看不清，换一张</a>
+              </label>
+            	<input  value="注册" class="btn" type="submit">
+            	<a  class="a_btn" style="display: block;text-align: center;">手机短信登录/注册</a>
+            </form>
+        </div>-->
+    </div>
+    </div>
+</div>
+<div class="login_info">
+    <a>简体</a><span>|</span>
+    <a>繁体</a><span>|</span>
+    <a>English</a><span>|</span>
+    <a>常见问题</a><span>|</span>
+    <p>小米公司版权所有-京ICP备10046444-<img src="{$config.site_url}/public/static/user/images/ghs.png">京公网安备11010802020134号-京ICP证110507号</p>
+</div>
+</body>
+<script>
+    /*看不清，换一张的函数*/
+    function changing() {
+        document.getElementById('verify_pic').src = "../library/verify.php?" + Math.random();
+    }
+$(document).ready(function(){
+   $(".login_main_top").find("a").mouseover(function () {
+      $(this).siblings('a').removeClass('hover');  // 删除其他兄弟元素的样式
+      $(this).addClass('hover');
+   });
+   $(".login_main_top").find("a").eq(0).click(function () {
+      $(".login_main_account").css("display","block");
+      $(".login_main_scan").css("display","none");
+   })
+   $(".login_main_top").find("a").eq(1).click(function () {
+      $(".login_main_account").css("display","none");
+      $(".login_main_scan").css("display","block");
+   })
+
+    // 登录按钮
+     $("#login_btn").click(function () {
+         // 用户名
+         var u_name = $("#login_username").val();
+         // 密码
+         var u_pwd = $("#login_pwd").val();
+         $.post('index.php?controler=user&action=doLogin',{ u_name:u_name,u_pwd:u_pwd}, function(rtnData){
+            if (rtnData != 'false') {
+                alert('登录成功,即将跳转页面');
+              window.open("../user/user_home","_self")
+            }else{
+              alert('登录失败,密码错误或用户不存在！');
+            }
+         })
+
+     })
+});
+</script>
+</html>

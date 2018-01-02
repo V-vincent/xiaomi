@@ -1,0 +1,33 @@
+body{
+    background-color: #cccccc;
+}
+.revise{
+    width: 50%;
+    height: 60%;
+    background: #ffffff;
+    margin: 100px auto;
+    text-align: center;
+}
+.revise input{
+    width:50%;
+    height: 22px;
+    line-height: 22px;
+    padding: 13px 16px 13px 14px;
+    display: block;
+    border: 1px solid #ccc;
+    color: #000;
+    margin: 15px auto;
+}
+.revise input.btn{
+    width: 54%;
+    height: 50px;
+    line-height: 30px;
+    display: block;
+    margin-bottom: 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    background: #f56600;
+    margin-top: 30px;
+}

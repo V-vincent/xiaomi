@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <style>
+        .reg{
+            width: 50%;
+            height: 60%;
+            background: #ffffff;
+            margin: 100px auto;
+            text-align: center;
+        }
+        body{
+            background-color: #cccccc;
+        }
+        .reg input{
+            width:50%;
+            height: 22px;
+            line-height: 22px;
+            padding: 13px 16px 13px 14px;
+            display: block;
+            border: 1px solid #ccc;
+            color: #000;
+            margin: 15px auto;
+        }
+        .reg input.btn{
+            width: 54%;
+            height: 50px;
+            line-height: 30px;
+            display: block;
+            margin-bottom: 14px;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+            cursor: pointer;
+            background: #f56600;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="reg">
+    <img src="{$config.site_url}/public/static/user/images/milogo.png" alt="">
+    <h1>注册小米账号</h1>
+    <form action="index.php?controler=user&action=doReg" method="POST">
+        <input type="text" name="user" placeholder="邮箱/手机号码/小米ID">
+        <input type="text" name="password" placeholder="密码">
+        <input type="text" class="verify" name="verify_code" placeholder="请输入验证码">
+        <img src="{$config.site_url}/library/verify.php" alt="" class="verify_img"
+             style="cursor: pointer;" id="img_verify" onclick="changing()">
+        <input type="submit" value="注册" class="btn" id="btn">
+    </form>
+</div>
+<script>
+    var verify=document.getElementById('img_verify');
+    function changing(){
+        verify.src="../library/verify.php?"+Math.random()
+    }
+</script>
+</body>
+</html>

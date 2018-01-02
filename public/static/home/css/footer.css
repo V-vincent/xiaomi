@@ -1,0 +1,158 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	display: block;
+	text-decoration: none;
+	cursor: pointer;
+}
+li{
+    list-style: none;
+}
+/* 底部1的样式 */
+.footer_one{
+    background: #fff;
+}
+.container{
+	width: 1226px;
+	margin: auto;	
+}
+.footer_service_list{
+	padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0; 
+    overflow: hidden;   
+}
+.footer_service_list li{
+    float: left;
+    width: 19.8%;
+    height: 25px;
+    border-left: 1px solid #e0e0e0;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+.footer_service_list li.left{
+	border-left: none;
+}
+.footer_service_list li a{
+	color: #757575;
+    font-size: 16px;
+    line-height: 25px;
+    text-decoration: none;
+}
+.footer_service_list li a:hover{
+	color: #ff6700;
+}
+/* 服务内容列表的样式 */
+.service_content{
+	padding: 40px 0;
+	overflow: hidden;
+}
+.service_content_list dl {
+	width: 13%;
+	float: left;
+}
+.service_content_list dl dt{
+	margin: 0 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+.service_content_list dl dd{
+	margin: 10px 0 0;
+}
+.service_content_list dl dd a{
+	color: #757575;
+	font-size: 12px;
+	text-decoration: none;
+}
+.service_content_list dl dd a:hover{
+	color: #ff6700;
+}
+/* 服务电话 */
+.service_phone{
+	float: right;
+	width: 20%;
+	border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+}
+.service_phone p{
+    margin: 0 0 16px;
+    font-size: 12px;
+}
+.service_phone .phone{
+	margin: 0 0 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+}
+.service_phone a{
+	display: block;
+	margin:auto;
+	width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    color: #ff6700;
+    border: 1px solid #ff6700;
+    text-decoration: none;
+}
+.service_phone a:hover{
+	color: #fff;
+    background-color: #f25807;
+    border-color: #f25807;
+}
+
+/* 底部2的样式 */
+.footer_two a{
+	color: #757575;
+}
+.footer_two a:hover{
+	color: #ff6700;
+}
+.footer_two{
+    padding: 30px 0;
+    font-size: 12px;
+    background: #fafafa;
+}
+.footer_two .container{
+	overflow: hidden;
+	color: #b0b0b0;
+}
+.footer_two .container .logo{
+	float: left;
+	margin-right: 10px;
+}
+.footer_two .container .text{
+	float: left;
+}
+.footer_two .container p{
+	line-height: 18px;
+	margin: 0;
+}
+.footer_two .container .text a{
+	float: left;
+	line-height: 18px;
+}
+.footer_two .container .text .sites .sep{
+	float: left;
+	margin: 0 .2em;
+}
+.footer_two .container .pict{
+	float: right;
+}
+.footer_two .container .pict img{
+	float: left;
+    height: 26px;
+    margin-left: 1px;
+}
+
+.footer_foot{
+	clear: both;
+	text-align: center;
+	font-size: 20px;
+    margin: 30px auto 0;
+    color: #b0b0b0;
+}
